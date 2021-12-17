@@ -657,8 +657,6 @@
                     <h3>Contact Form</h3>
                   </div>
                   <form id="contact-form" method="post" name="contact"  netlify>
-                   <input type="hidden" name="contact" value="contact">
-
                     <div class="messages"></div>
 
                     <div class="controls">
@@ -691,7 +689,7 @@
                       </div> -->
                       <div class=" form-group offset-4">
 
-                        <input type="submit" class="button btn-send" value="Send message">
+                        <button type="submit" class="button btn-send" onclick="successMessage()" id="btn-Send" value="Send message">Send message</button>
                       </div>
                     </div>
                   </form>
@@ -708,6 +706,7 @@
     <!-- /Main Content -->
   </div>
   <script src="js/blogapi.js"></script>
+  <script src="js/sweetalert.js"></script>
   <script>
     RenderApiData("blog1", data[0]);
     RenderApiData("blog2", data[1]);
@@ -725,6 +724,9 @@
   <script src="js/tilt.jquery.min.js"></script>
   <script src="js/jquery.hoverdir.js"></script>
   <script src="js/main.js"></script>
+  <script src="sweetalert2.all.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- <script>document.getElementById("btn-Send").addEventListener("click", successMessage);</script> -->
 </body>
 
 </html>
