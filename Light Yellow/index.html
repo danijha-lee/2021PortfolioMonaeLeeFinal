@@ -63,6 +63,10 @@
             <a class="pt-trigger" href="#portfolio" data-animation="19"><i
                 class="menu-icon pe-7s-icon pe-7s-portfolio"></i>Portfolio</a>
           </li>
+           <li>
+             <a class="pt-trigger" href="#blog" data-animation="19"><i
+                 class="menu-icon pe-7s-icon pe-7s-display2"></i>Blog</a>
+           </li>
           <li>
             <a class="pt-trigger" href="#contact" data-animation="20"><i
                 class="menu-icon pe-7s-icon pe-7s-mail"></i>Contact</a>
@@ -474,6 +478,126 @@
           </section>
           <!-- /Portfolio Subpage -->
 
+            <!-- Blog Subpage -->
+            <section class="pt-page pt-page-5" data-id="blog">
+              <div class="border-block-top-110"></div>
+              <div class="section-inner">
+                <div class="section-title-block">
+                  <div class="section-title-wrapper">
+                    <h2 class="section-title">Blog</h2>
+                     <h5 class="section-description">These Blog Posts are generated through an API that is connected to my tech blog application Thrive.</h5> 
+
+                  </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                      <div id="blog1" class="card ">
+                        <div class="card-img">
+                          <a href="https://mlshadowblog.herokuapp.com/MonaesBlog/PostDetails/models-explained"><img
+                              src="/Light Yellow/images/mvc.png" alt="" style="width:373px;height:248px"></a>
+                        </div>
+                        <div class="card-body">
+                         
+                          <h3 class="card-title"><a
+                              href="https://mlshadowblog.herokuapp.com/MonaesBlog/PostDetails/models-explained">MVC Explained</a>
+                          </h3>
+                          <p class="card-description">
+                           
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <div class="post-author">
+                            <a href="#">
+                              <!-- <img src="/Light Yellow/images/IMG-6104.PNG" alt="" class="avatar rounded-circle"> -->
+                              <span class="author">Monae Lee</span>
+                            </a>
+                          </div>
+                          <div class="post-date">
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div id="blog2" class="card ">
+                        <div class="card-img">
+                          <a href="https://mlshadowblog.herokuapp.com/MonaesBlog/PostDetails/models-explained"><img
+                              src="/img/github-post.png" alt="" style="width:373px;height:248px"></a>
+                        </div>
+                        <div class="card-body">
+                         
+                          <h3 class="card-title"><a
+                              href="https://mlshadowblog.herokuapp.com/MonaesBlog/PostDetails/models-explained">How to
+                              publish to GitHub</a>
+                          </h3>
+                          <p class="card-description">
+                            We use GitHub, and other source repositories, to save our work, implement new features
+                            without
+                            breaking our projects and to collaborate with our team.
+                            Here's an easy way to get up and running.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <div class="post-author">
+                            <a href="#">
+                             
+                              <span class="author">Monae Lee</span>
+                            </a>
+                          </div>
+                          <div class="post-date">
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 border border">
+                      <div id="blog3" class="card  ">
+                        <div class="card-img">
+                          <a href="https://mlshadowblog.herokuapp.com/MonaesBlog/PostDetails/models-explained"><img
+                              src="/img/github-post.png" alt="" height="" style="width:373px;height:248px"></a>
+                        </div>
+                        <div class="card-body">
+                          
+                          <h3 class="card-title"><a
+                              href="https://mlshadowblog.herokuapp.com/MonaesBlog/PostDetails/models-explained">How to
+                              publish to GitHub</a>
+                          </h3>
+                          <p class="card-description">
+                            We use GitHub, and other source repositories, to save our work, implement new features
+                            without
+                            breaking our projects and to collaborate with our team.
+                            Here's an easy way to get up and running.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <div class="post-author">
+                            <a href="#">
+                             
+                              <span class="author">Monae Lee</span>
+                            </a>
+                          </div>
+                          <div class="post-date">
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                  
+                   
+                 
+                </div>
+                <div class="row">
+                  <div class="col text-center">
+                    <img src="images/ThrivePreLoaderLogo.png" alt="App Logo">
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End Blog Subpage -->
+
+
           <!-- Contact Subpage -->
           <section class="pt-page pt-page-5" data-id="contact">
             <div class="border-block-top-110"></div>
@@ -577,7 +701,11 @@
     </div>
     <!-- /Main Content -->
   </div>
-
+<script src="/Light Yellow/js/blogapi.js"></script>
+<script>RenderApiData("blog1",data[0]);
+RenderApiData("blog2",data[1]);
+RenderApiData("blog3",data[2]);
+</script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/pages-switcher.js"></script>
   <script src="js/imagesloaded.pkgd.min.js"></script>
